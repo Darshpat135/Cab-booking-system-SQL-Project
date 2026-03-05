@@ -113,12 +113,6 @@ VALUES
 (502, 105, 'Change of plans.', 'Customer Personal Reason');
 
 Select * from Feedback;
- -- Customers (CustomerID, Name, Phone, Email, JoinDate)
--- Drivers (DriverID, Name, Phone, LicenseNumber, JoinDate, Rating)  
--- Cabs (CabID, DriverID, CabType, PlateNumber) 
--- Bookings (BookingID, CustomerID, CabID, BookingTime, TripStartTime, TripEndTime, PickupLocation, DropoffLocation, Status) 
--- TripDetails (TripID, BookingID, Distance, Fare, DriverRating) 
--- Feedback (FeedbackID, BookingID, CustomerFeedback, ReasonForCancellation) 
 
 -- 1. Identify customers who have completed the most bookings. What insights can you draw about their behavior?
 
@@ -248,12 +242,3 @@ WHERE
 GROUP BY Comments
 ORDER BY CountReason DESC;
 
--- 3. Find out whether shorter trips (low-distance) contribute significantly to revenue.Should the company encourage more short-distance rides?
-
--- Comparative & Predictive Analysis
-
--- 1. Compare the revenue generated from 'Sedan' and 'SUV' cabs. Should the company invest more in a particular vehicle type?
-
--- 2. Predict which customers are likely to stop using the service based on their last booking date and frequency of rides. How can customer retention be improved?
-
--- 3. Analyze whether weekend bookings differ significantly from weekday bookings. Should the company introduce dynamic pricing based on demand?
